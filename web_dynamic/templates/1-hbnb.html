@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css?{{ cache_id }}">
     <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css?{{ cache_id }}">
     <!--Import JQuery for task 2-->
-    <script type="text/javascript" src="0-script.js"></script>
-    <script src="static/scripts/1-hbnb.js?{{ cache_id }}"></script>
+    <script type="text/javascript" src="static/scripts/1-hbnb.js?{{ cache_id }}"></script>
     <link rel="icon" href="../static/images/icon.png?{{ cache_id }}" />
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <title>HBnB</title>
   </head>
   <body>
@@ -37,13 +37,16 @@
 	    </ul>
 	  </div>
 	</div>
+
+	<!-- **********************  AMENITIES  ********************** -->
+
 	<div class="amenities">
 	  <h3>Amenities</h3>
 	  <h4>&nbsp;</h4>
 	  <div class="popover">
 	    <ul>
 	      {% for amenity in amenities %}
-	      <li><input type="checkbox" data-id=":amenity_id" name=":amenity_name">{{ amenity.name }}</li>
+	      <li><INPUT type="checkbox" data-id="{{amenity.id}}" data-name="{{amenity.name}}">{{ amenity.name }}</li>
 	      {% endfor %}
 	    </ul>
 	  </div>
