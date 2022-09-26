@@ -1,29 +1,15 @@
 header {
-    display: flex;
-    background-color: white;
+    background: white;
     height: 70px;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
 }
-header.logo {
+header .logo {
+    background: url("../images/logo.png") no-repeat;
+    left: 20px;
     height: 100%;
-    width: 142px;
-    background-image: url("../images/logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 20px;
-}
-#api_status {
-    position: relative;
-    border-radius: 40px;
-    background-color: #cccccc;
-    width: 40px;
-    height: 40px;
-    align-self: center;
-    margin-left: auto;
-    margin-right: 30px;
 }
 
-#api_status.available {
+header .available {
     background-color: #ff545f;
 }
